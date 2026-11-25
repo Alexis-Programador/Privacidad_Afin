@@ -56,12 +56,25 @@
     .callout p { color:#dbcde9; margin:0 0 14px; }
     .footer-link { color:#eed5ff; }
     @media(max-width:490px) { .action-btn {width:100%;} .top-link {font-size:.75rem;padding:8px 9px;} }
+  
+    .header-nav { display:flex; justify-content:flex-end; align-items:center; gap:10px; flex-wrap:wrap; }
+    .btn-plain { display:inline-flex; justify-content:center; align-items:center; min-height:40px; padding:8px 14px; border:1px solid #765093; border-radius:12px; color:#f9e5ff; text-decoration:none; font-size:.85rem; font-weight:750; }
+    .btn-plain:hover,.btn-plain:focus-visible { background:#362346; color:white; }
+    .micro { color:#bbaacb; font-size:.88rem; }
+    .panel a { text-underline-offset:3px; }
+    .panel ul li::marker { color:#d389ff; }
+    .terms-highlight { border:1px solid #764b96; background:linear-gradient(110deg,#2f1c41,#23172f); padding:18px 20px; border-radius:17px; margin:0 0 16px; color:#eadbf8; }
+    @media(max-width:620px) { .top { align-items:flex-start; } .brand { font-size:1.26rem; } .header-nav { gap:7px; } .btn-plain { padding:8px 10px; font-size:.76rem; } }
+
   </style>
 </head>
 <body>
   <header class="top">
     <a class="brand" href="#inicio"><span class="heart" aria-hidden="true">♥</span><span>Afin</span></a>
-    <a class="top-link" href="eliminar-cuenta.html">Eliminar mi cuenta ↗</a>
+    <nav class="header-nav" aria-label="Navegación principal">
+      <a class="btn-plain" href="condiciones-del-servicio.html">📄 Condiciones del Servicio</a>
+      <a class="top-link" href="eliminar-cuenta.html">Eliminar mi cuenta ↗</a>
+    </nav>
   </header>
 
   <main id="inicio">
@@ -69,7 +82,10 @@
       <span class="eyebrow">Transparencia y confianza</span>
       <h1>Política de privacidad</h1>
       <p class="lead">En Afin valoramos tu privacidad. Aquí explicamos qué información puede tratar nuestra aplicación Android, con qué finalidad la utilizamos y cómo puedes ejercer tus derechos sobre ella.</p>
-      <div class="action-row"><a class="action-btn" href="eliminar-cuenta.html" aria-label="Ir a la página para solicitar eliminación de cuenta y datos">🗑️ Solicitar eliminación de cuenta</a></div>
+      <div class="action-row">
+        <a class="action-btn" href="condiciones-del-servicio.html">📄 Ver Condiciones del Servicio</a>
+        <a class="action-btn secondary" href="eliminar-cuenta.html" aria-label="Ir a la página para solicitar eliminación de cuenta y datos">🗑️ Solicitar eliminación de cuenta</a>
+      </div>
       <div class="meta">
         <span class="chip">Aplicación: Afin</span>
         <span class="chip">Android · com.alexis52studios.Afin</span>
@@ -100,8 +116,8 @@
         <section id="responsable" class="panel">
           <h2>01. Responsable de la aplicación</h2>
           <p><strong>Afin</strong> es una aplicación social para descubrir personas, crear perfiles, participar en conversaciones y comunidades, compartir contenido multimedia y acceder a funciones de entretenimiento.</p>
-          <p><strong>Responsable del tratamiento:</strong> <span class="needs-update">[NOMBRE LEGAL DEL DESARROLLADOR O EMPRESA]</span>.</p>
-          <p><strong>Correo de privacidad y soporte:</strong> <span class="needs-update">[CORREO DE CONTACTO]</span>.</p>
+          <p><strong>Responsable del tratamiento:</strong> <span>Julio Alexis Gallegos Guadiana</span>.</p>
+          <p><strong>Correo de privacidad y soporte:</strong> <a href="mailto:alexis52gamer@gmail.com">alexis52gamer@gmail.com</a>.</p>
           <p>Este correo se utiliza para resolver consultas de privacidad y recibir solicitudes relacionadas con los datos personales.</p>
         </section>
 
@@ -178,7 +194,7 @@
           <p>Puedes iniciar el proceso desde la función <strong>Eliminar cuenta</strong> de Afin. También puedes enviar una solicitud al correo de privacidad indicado en esta política si no puedes acceder a la aplicación o si necesitas ayuda.</p>
           <p>En el mensaje indica que deseas <strong>eliminar tu cuenta de Afin y los datos asociados</strong>, junto con el correo de registro, sin incluir tu contraseña. Podríamos solicitar una verificación razonable para proteger tu cuenta frente a solicitudes no autorizadas.</p>
           <p>La eliminación debe comprender la cuenta y sus datos asociados, incluidos los archivos multimedia que estén bajo control del servicio, salvo excepciones legales aplicables. Si ciertas referencias compartidas no pueden borrarse de inmediato, deberemos gestionar su anonimización o eliminación mediante los procesos disponibles e informarte de las limitaciones.</p>
-          <p class="note"><strong>Contacto para solicitudes de eliminación:</strong> <span class="needs-update">[CORREO DE CONTACTO]</span>. Esta sección también puede utilizarse como página de información del procedimiento, siempre que el canal de solicitud sea real y funcione.</p>
+          <p class="note"><strong>Contacto para solicitudes de eliminación:</strong> <a href="mailto:alexis52gamer@gmail.com">alexis52gamer@gmail.com</a>. Esta sección también puede utilizarse como página de información del procedimiento, siempre que el canal de solicitud sea real y funcione.</p>
           <div class="action-row"><a class="action-btn" href="eliminar-cuenta.html">Ir a eliminar cuenta y datos →</a></div>
         </section>
 
@@ -202,12 +218,12 @@
         <section id="cambios" class="panel">
           <h2>12. Cambios y contacto</h2>
           <p>Podemos actualizar esta política para reflejar cambios en las funciones, los proveedores tecnológicos o los requisitos legales. La fecha de la parte superior indicará la última actualización publicada. Si un cambio requiere avisos o consentimientos adicionales, se gestionarán mediante los mecanismos apropiados.</p>
-          <p><strong>Aplicación:</strong> Afin<br><strong>Identificador Android:</strong> com.alexis52studios.Afin<br><strong>Responsable:</strong> <span class="needs-update">Julio Alexis Gallegos Guadiana</span><br><strong>Contacto:</strong> <span class="needs-update">alexis52gamer@gmail.com</span></p>
+          <p><strong>Aplicación:</strong> Afin<br><strong>Identificador Android:</strong> com.alexis52studios.Afin<br><strong>Responsable:</strong> <span>Julio Alexis Gallegos Guadiana</span><br><strong>Contacto:</strong> <a href="mailto:alexis52gamer@gmail.com">alexis52gamer@gmail.com</a></p>
         </section>
       </div>
     </div>
   </main>
 
-  <footer class="footer"><span>© 2026 Afin · Política de privacidad</span><a class="footer-link" href="eliminar-cuenta.html">Eliminar cuenta y datos →</a><a href="#inicio">Volver al inicio ↑</a></footer>
+  <footer class="footer"><span>© 2026 Afin · Política de privacidad</span><a class="footer-link" href="condiciones-del-servicio.html">Condiciones del Servicio →</a><a class="footer-link" href="eliminar-cuenta.html">Eliminar cuenta y datos →</a><a href="#inicio">Volver al inicio ↑</a></footer>
 </body>
 </html>
