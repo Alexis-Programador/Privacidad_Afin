@@ -44,12 +44,24 @@
     @media(max-width:800px) { .layout { grid-template-columns:1fr; } .toc { position:static; } .toc .links { display:grid; grid-template-columns:1fr 1fr; gap:2px; } .hero { padding-top:20px; } }
     @media(max-width:490px) { .toc .links { grid-template-columns:1fr; } .top { padding-top:16px; } }
     @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+    .action-row { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin:22px 0 6px; }
+    .action-btn { display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:46px; padding:11px 20px; border-radius:13px; background:linear-gradient(110deg,#933bec,#dc409e); color:#fff!important; font-weight:750; text-decoration:none; box-shadow:0 8px 28px #8528c04a; border:1px solid #da8eff44; transition:filter .15s ease,transform .15s ease; }
+    .action-btn:hover,.action-btn:focus-visible { filter:brightness(1.16); transform:translateY(-1px); }
+    .action-btn.secondary { background:#291b3a; border:1px solid #744998; box-shadow:none; }
+    .top-link { text-decoration:none; color:#f5dfff; border:1px solid #674480; border-radius:12px; padding:8px 13px; font-size:.87rem; font-weight:700; }
+    .top-link:hover,.top-link:focus-visible { background:#332043; color:white; }
+    .callout { border:1px solid #613887; border-radius:16px; padding:18px 20px; background:linear-gradient(120deg,#342040,#241632); }
+    .callout h2 { margin:0 0 8px; color:white; font-size:1.11rem; }
+    .callout p { color:#dbcde9; margin:0 0 14px; }
+    .footer-link { color:#eed5ff; }
+    @media(max-width:490px) { .action-btn {width:100%;} .top-link {font-size:.75rem;padding:8px 9px;} }
   </style>
 </head>
 <body>
   <header class="top">
     <a class="brand" href="#inicio"><span class="heart" aria-hidden="true">♥</span><span>Afin</span></a>
-    <span class="header-side">Privacidad y protección de datos</span>
+    <a class="top-link" href="eliminar-cuenta.html">Eliminar mi cuenta ↗</a>
   </header>
 
   <main id="inicio">
@@ -57,6 +69,7 @@
       <span class="eyebrow">Transparencia y confianza</span>
       <h1>Política de privacidad</h1>
       <p class="lead">En Afin valoramos tu privacidad. Aquí explicamos qué información puede tratar nuestra aplicación Android, con qué finalidad la utilizamos y cómo puedes ejercer tus derechos sobre ella.</p>
+      <div class="action-row"><a class="action-btn" href="eliminar-cuenta.html" aria-label="Ir a la página para solicitar eliminación de cuenta y datos">🗑️ Solicitar eliminación de cuenta</a></div>
       <div class="meta">
         <span class="chip">Aplicación: Afin</span>
         <span class="chip">Android · com.alexis52studios.Afin</span>
@@ -166,6 +179,7 @@
           <p>En el mensaje indica que deseas <strong>eliminar tu cuenta de Afin y los datos asociados</strong>, junto con el correo de registro, sin incluir tu contraseña. Podríamos solicitar una verificación razonable para proteger tu cuenta frente a solicitudes no autorizadas.</p>
           <p>La eliminación debe comprender la cuenta y sus datos asociados, incluidos los archivos multimedia que estén bajo control del servicio, salvo excepciones legales aplicables. Si ciertas referencias compartidas no pueden borrarse de inmediato, deberemos gestionar su anonimización o eliminación mediante los procesos disponibles e informarte de las limitaciones.</p>
           <p class="note"><strong>Contacto para solicitudes de eliminación:</strong> <span class="needs-update">[CORREO DE CONTACTO]</span>. Esta sección también puede utilizarse como página de información del procedimiento, siempre que el canal de solicitud sea real y funcione.</p>
+          <div class="action-row"><a class="action-btn" href="eliminar-cuenta.html">Ir a eliminar cuenta y datos →</a></div>
         </section>
 
         <section id="derechos" class="panel">
@@ -194,6 +208,6 @@
     </div>
   </main>
 
-  <footer class="footer"><span>© 2026 Afin · Política de privacidad</span><a href="#inicio">Volver al inicio ↑</a></footer>
+  <footer class="footer"><span>© 2026 Afin · Política de privacidad</span><a class="footer-link" href="eliminar-cuenta.html">Eliminar cuenta y datos →</a><a href="#inicio">Volver al inicio ↑</a></footer>
 </body>
 </html>
