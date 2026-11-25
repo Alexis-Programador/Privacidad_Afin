@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#100a1c">
+  <meta name="description" content="Solicita la eliminación de tu cuenta de Afin y de los datos personales asociados.">
+  <title>Eliminar cuenta y datos | Afin</title>
+  <!-- IMPORTANTE ANTES DE PUBLICAR: reemplazar todos los textos [CORREO DE CONTACTO] y el mailto:REEMPLAZAR_CORREO@DOMINIO.COM por el correo real de privacidad. -->
+  <style>
+    :root { font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color: #eee9f6; background: #0e0919; font-synthesis: none; }
+    * { box-sizing:border-box }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background: radial-gradient(circle at 12% -7%,#40225c 0,transparent 32%), radial-gradient(circle at 100% 10%,#251138 0,transparent 30%),#0e0919; line-height:1.7; }
+    a { color:#d6b0ff; overflow-wrap:anywhere; }
+    a:hover, a:focus { color:#ffb6e3; }
+    .top { max-width:1080px; margin:auto; padding:28px 24px 18px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { display:flex; align-items:center; gap:12px; font-size:1.42rem; font-weight:800; letter-spacing:-.04em; color:white; text-decoration:none; }
+    .heart { display:inline-grid; place-items:center; height:43px;width:43px;border-radius:14px; font-size:24px; color:white; background:linear-gradient(135deg,#8c40e9,#eb3aab); box-shadow:0 7px 26px #a03eeb42; }
+    .header-side { font-size:.86rem; color:#bbadcf; }
+    .hero { max-width:1080px; padding:40px 24px 22px; margin:auto; }
+    .eyebrow { display:inline-block; text-transform:uppercase; letter-spacing:.14em; color:#df9dff; font-size:.77rem; font-weight:800; }
+    h1 { color:#fff; font-size:clamp(2rem,5.4vw,3.65rem); letter-spacing:-.055em; line-height:1.1; margin:13px 0 15px; }
+    .lead { color:#c7bbd6; max-width:740px; font-size:1.06rem; line-height:1.8; }
+    .meta { margin-top:22px; display:flex; flex-wrap:wrap; gap:10px; }
+    .chip { font-size:.78rem; font-weight:650; border:1px solid #473555; border-radius:100px; padding:6px 11px; background:#21152f; color:#e7dbf0; }
+    .layout { display:grid; grid-template-columns:255px minmax(0,1fr); gap:27px; max-width:1080px; padding:20px 24px 70px; margin:auto; align-items:start; }
+    .toc { position:sticky; top:22px; border:1px solid #332840; background:#171020e8; border-radius:18px; padding:18px; }
+    .toc b { display:block; font-size:.85rem; margin-bottom:12px; color:#fff; }
+    .toc a { display:block; text-decoration:none; padding:7px 9px; font-size:.86rem; color:#bfb1d1; border-radius:9px; }
+    .toc a:hover,.toc a:focus { background:#322141; color:white; }
+    .content { min-width:0; }
+    .panel { border:1px solid #382c48; background:linear-gradient(180deg,#1c1329,#181022); border-radius:20px; padding:clamp(20px,3vw,33px); margin-bottom:16px; box-shadow:0 6px 25px #05030935; }
+    .panel h2 { font-size:1.2rem; line-height:1.3; color:#fff; letter-spacing:-.02em; margin:0 0 13px; }
+    .panel h3 { color:#f3e4ff; font-size:1rem; margin:21px 0 8px; }
+    .panel p { color:#d2c8dc; margin:8px 0 13px; }
+    .panel ul { padding-left:22px; margin:10px 0 5px; color:#d2c8dc; }
+    .panel li { margin:8px 0; }
+    .panel strong { color:#fff; }
+    .note { border-left:3px solid #ba68ee; background:#281736; padding:13px 16px; border-radius:7px 12px 12px 7px; }
+    .needs-update { color:#f3d29b; font-weight:700; background:#34221b; padding:2px 6px; border-radius:5px; }
+    .footer { border-top:1px solid #2f253a; max-width:1032px; margin:0 auto; padding:25px 24px 45px; display:flex; gap:15px; justify-content:space-between; flex-wrap:wrap; color:#a89ab8; font-size:.82rem; }
+    :target { scroll-margin-top:20px; }
+    @media(max-width:800px) { .layout { grid-template-columns:1fr; } .toc { position:static; } .toc .links { display:grid; grid-template-columns:1fr 1fr; gap:2px; } .hero { padding-top:20px; } }
+    @media(max-width:490px) { .toc .links { grid-template-columns:1fr; } .top { padding-top:16px; } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+    .action-row { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin:22px 0 6px; }
+    .action-btn { display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:46px; padding:11px 20px; border-radius:13px; background:linear-gradient(110deg,#933bec,#dc409e); color:#fff!important; font-weight:750; text-decoration:none; box-shadow:0 8px 28px #8528c04a; border:1px solid #da8eff44; transition:filter .15s ease,transform .15s ease; }
+    .action-btn:hover,.action-btn:focus-visible { filter:brightness(1.16); transform:translateY(-1px); }
+    .action-btn.secondary { background:#291b3a; border:1px solid #744998; box-shadow:none; }
+    .top-link { text-decoration:none; color:#f5dfff; border:1px solid #674480; border-radius:12px; padding:8px 13px; font-size:.87rem; font-weight:700; }
+    .top-link:hover,.top-link:focus-visible { background:#332043; color:white; }
+    .callout { border:1px solid #613887; border-radius:16px; padding:18px 20px; background:linear-gradient(120deg,#342040,#241632); }
+    .callout h2 { margin:0 0 8px; color:white; font-size:1.11rem; }
+    .callout p { color:#dbcde9; margin:0 0 14px; }
+    .footer-link { color:#eed5ff; }
+    @media(max-width:490px) { .action-btn {width:100%;} .top-link {font-size:.75rem;padding:8px 9px;} }
+  
+    .delete-main { max-width:920px; padding:18px 24px 75px; margin:0 auto; }
+    .delete-main .panel { margin-top:16px; }
+    .steps { counter-reset:step; list-style:none; padding:0; margin:10px 0; }
+    .steps li { position:relative; padding:0 0 12px 45px; margin:17px 0; color:#d2c8dc; }
+    .steps li::before { counter-increment:step; content:counter(step); position:absolute; left:0; top:2px; display:grid; place-items:center; width:29px; height:29px; background:#6332a0; color:white; border-radius:10px; font-weight:800; }
+    .sample { background:#120c1e; border:1px solid #48345f; padding:15px 18px; border-radius:14px; color:#ecdef8; overflow-wrap:anywhere; }
+    .warning { background:#392617; border:1px solid #ae7945; color:#fbe1b9; padding:16px; border-radius:12px; }
+    .warning strong { color:#fff4dc; }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="index.html"><span class="heart" aria-hidden="true">♥</span><span>Afin</span></a>
+    <a class="top-link" href="index.html">← Política de privacidad</a>
+  </header>
+  <main id="inicio">
+    <div class="hero">
+      <span class="eyebrow">Control de tus datos</span>
+      <h1>Eliminar cuenta y datos</h1>
+      <p class="lead">Esta página explica cómo puedes solicitar la eliminación de tu cuenta de <strong>Afin</strong> y los datos personales asociados, aunque ya no puedas iniciar sesión.</p>
+      <div class="meta"><span class="chip">Aplicación: Afin</span><span class="chip">Android · com.alexis52studios.Afin</span><span class="chip">Actualización: 25 de noviembre de 2026</span></div>
+      <div class="action-row">
+        <a class="action-btn secondary" href="index.html">← Volver al index / Política de privacidad</a>
+      </div>
+    </div>
+    <div class="delete-main">
+      <section class="panel" id="solicitar">
+        <h2>01. Cómo solicitar la eliminación</h2>
+        <p>Si tienes acceso a tu cuenta, puedes utilizar la opción <strong>Eliminar cuenta</strong> de Afin cuando esté disponible y funcione correctamente. Como alternativa, solicita asistencia desde esta página:</p>
+        <ol class="steps">
+          <li>Envía un correo desde la dirección vinculada a tu cuenta o indica cuál es tu correo registrado en Afin.</li>
+          <li>En el asunto escribe <strong>Solicitud de eliminación de cuenta Afin</strong>.</li>
+          <li>Solicita expresamente la eliminación de tu cuenta y datos asociados. No envíes contraseñas, códigos de verificación ni documentos sensibles por iniciativa propia.</li>
+          <li>El equipo responsable deberá verificar razonablemente la titularidad de la cuenta y comunicar los pasos necesarios para completar el trámite.</li>
+        </ol>
+        <div class="callout">
+          <h2>Solicitar por correo</h2>
+          <p>Correo de privacidad y solicitudes: <span class="needs-update">[CORREO DE CONTACTO]</span></p>
+          <a class="action-btn" href="mailto:REEMPLAZAR_CORREO@DOMINIO.COM?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta%20Afin&amp;body=Hola%2C%20solicito%20la%20eliminaci%C3%B3n%20de%20mi%20cuenta%20de%20Afin%20y%20los%20datos%20personales%20asociados.%0A%0ACorreo%20registrado%20en%20Afin%3A%20%0A%0ANo%20incluyo%20mi%20contrase%C3%B1a.%0A">✉️ Redactar solicitud de eliminación</a>
+        </div>
+        <p class="note"><strong>Aviso:</strong> este botón abre tu aplicación de correo. Esta página estática de GitHub Pages <strong>no borra datos automáticamente</strong>; el responsable de Afin debe recibir, validar y tramitar cada solicitud.</p>
+      </section>
+      <section class="panel" id="datos">
+        <h2>02. Qué datos se solicitan eliminar</h2>
+        <p>La solicitud comprende los datos de tu cuenta que estén bajo control de Afin, según existan en el servicio:</p>
+        <ul>
+          <li><strong>Cuenta:</strong> identificadores de usuario y credenciales gestionadas mediante Firebase Authentication.</li>
+          <li><strong>Perfil:</strong> nombre, edad, preferencias, descripción, fotos de perfil y otra información aportada.</li>
+          <li><strong>Contenido y actividad:</strong> publicaciones, historias, archivos subidos, likes, matches y relaciones asociadas a tu cuenta.</li>
+          <li><strong>Comunicaciones:</strong> mensajes y registros asociados, sujetos a las limitaciones de conversaciones compartidas y obligaciones aplicables.</li>
+          <li><strong>Archivos multimedia:</strong> contenido almacenado en servicios como IDrive e2, cuando el archivo esté asociado a tu cuenta y bajo control de Afin.</li>
+        </ul>
+      </section>
+      <section class="panel" id="retencion">
+        <h2>03. Datos que podrían conservarse</h2>
+        <p>Es posible que determinada información deba mantenerse durante un período adicional si existe una obligación legal, una necesidad de seguridad, prevención de fraude o resolución de controversias. Los plazos y categorías aplicables deben comunicarse en la respuesta a la solicitud.</p>
+        <p>Las copias guardadas por otras personas, los respaldos técnicos y las referencias en conversaciones compartidas podrían requerir un proceso adicional o quedar sujetos a limitaciones justificadas. Afin debe tramitar la supresión o anonimización de los datos que efectivamente controle.</p>
+      </section>
+      <section class="panel" id="ayuda">
+        <h2>04. Si no puedes entrar a Afin</h2>
+        <p>No necesitas iniciar sesión en la página web para pedir la eliminación. Puedes utilizar el correo de contacto indicado arriba y proporcionar información suficiente para verificar de forma segura que eres titular de la cuenta.</p>
+        <p>Si deseas conocer el tratamiento general de datos, consulta también nuestra <a href="index.html">Política de privacidad</a>.</p>
+        <div class="action-row"><a class="action-btn secondary" href="index.html">← Regresar a index.html</a></div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer"><span>© 2026 Afin · Eliminación de cuenta y datos</span><a class="footer-link" href="index.html">Política de privacidad / Inicio ↑</a></footer>
+</body>
+</html>
